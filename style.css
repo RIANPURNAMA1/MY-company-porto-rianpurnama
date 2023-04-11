@@ -1,0 +1,615 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=East+Sea+Dokdo&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Inconsolata:wght@200;300;400;700;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,900&family=Sevillana&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.containers{
+    box-sizing: border-box;
+    width: 100%;
+}
+body{
+    background-color:  rgb(36, 35, 35);
+}
+:root{
+    --bgg: rgb(36, 35, 35);
+    --bg:rgb(67, 67, 168);
+    --text:rgb(243, 196, 196);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 1rem;
+    background-color: var(--bgg);
+    box-shadow: 0 1px 1px 0 ;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-top: -1.4rem;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul li a{
+    margin: 0 1rem;
+    color: white;
+    font-weight: 200;
+}
+.banner{
+    padding: 1.5rem;
+}
+.navbar ul li a:hover{
+    color: var(--bg);
+    transition: 1s;
+}
+#check{
+    display: none;
+}
+.header a{
+    font-weight: 700;
+    color: var(--text);
+    font-size: 1.5rem;
+}
+.mobile{
+    color: white;
+    font-size: 1.5rem;display: none;
+}
+
+.xmark{
+position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+  top: 0;
+  color: rgb(0, 0, 0);
+  margin-right: 2px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  padding: 0 0.4rem;
+  
+}
+.sidbar ul li a:hover{
+    color:rgb(0, 31, 59) ;
+    transition: 1s;
+}
+.sidbar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -400px;
+    width: 200px;
+    background-color: var(--bgg);
+    box-shadow: 0 7px 7px 0 black;
+    z-index: 55;
+}
+.sidbar ul {
+    line-height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.sidbar ul li{
+    list-style-type: none;
+}
+.sidbar ul li a{
+    color:rgb(255, 255, 255) ;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+.paragraf{
+    margin-top: 5rem;
+    margin-left: 1rem;
+    color: var(--text);
+}
+.paragraf h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.paragraf h1{
+    font-weight: 200;
+    letter-spacing: 2px;
+    
+}
+.image img{
+    width: 300px;
+    margin-top: 4rem;
+}
+.paragraf p{
+    font-weight: 200;
+    line-height: 1.9rem;
+
+}
+.paragraf h2{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.medsos {
+    letter-spacing: 1rem;
+   margin-top: 1rem;
+   font-size: 1.7rem;
+}
+.cv a:hover{
+    color: var(--bg);
+    transform: scaleX(1.5);
+    transition: 1s;
+}
+.cv a{
+    text-decoration: none;
+    color: white;
+}
+.cv button{
+    padding:6px 2rem;
+    box-shadow: 0 2px 4px 0 rgb(23, 23, 23);
+    margin-top:1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bgg);
+}
+.container{
+    padding: 2rem;
+ background:linear-gradient(0deg, rgba(1, 1, 3,1)5%,rgba(255, 255, 255, 0)90%)
+}
+.container1{
+    margin-top: -2rem;
+    background:linear-gradient(0deg, rgba(255, 255, 255,0)5%,rgba(1, 1, 3, 1)90%)
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ab{
+    text-align: center;
+    color: var(--text);
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.image1{
+    width: 300px;
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+.paragraf1{
+    line-height: 1.7rem;
+    margin-top: 2rem;
+    font-weight: 200;
+    margin-right: 1rem;
+    color:var(--text);
+    text-align: end;
+    width: 500px;
+
+}
+.se{
+    text-align: center;
+    color: var(--text);
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 5rem;
+}
+.card{
+    box-sizing: border-box;
+    box-shadow: 0 7px 10px 0 ;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+}
+.card-image p{
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 2px 3px 0 rgb(0, 0, 0);
+    box-sizing: border-box;
+   
+    color: rgb(255, 252, 252);
+}
+.card-image img{
+    width: 300px;
+    height: 150px;
+    background-image:cover;
+    object-fit: cover;
+}
+.card img:hover{
+    transform: scale(0.9);
+    object-position: center;
+    object-fit: cover;
+    transition: 1.2s;
+    cursor:grab;
+}
+.container5{
+    background:linear-gradient(0deg, rgba(1, 1, 3,1)5%,rgba(255, 255, 255, 0)90%);
+    padding: 0 2rem 0 2rem;
+    padding-bottom: 5rem;
+}
+.por{
+    text-align: center;
+    color: var(--text);
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-shadow: 0 3px 2px 2px black ;
+}
+.col{
+  
+   display: flex;
+   justify-content: center;
+  flex-wrap: wrap;
+   gap: 2rem;
+   box-shadow: 0 5px 7px 0 rgba(1, 1, 3, 1);
+   padding: 2rem;
+   background:linear-gradient( to top,rgba(83, 82, 82, 0.11),rgb(0, 0, 0));
+}
+.portopolio{
+    padding:  1rem;
+    background-color: aliceblue;
+    z-index: 2;
+}
+.portopolio:hover .image2{
+    transform: scale(1.1);
+    transition: 1s;
+    opacity: 2;
+}
+
+.image2 img{
+    width: 200px;
+    height: 150px;
+}
+.contact{
+    
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: black;
+}
+.btn-contact button{
+    padding: 0.4rem 10%;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    font-weight: 200;
+    border-radius: 1rem;
+}
+.btn-contact button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.wadah-contact{
+  box-shadow: 0 6px 8px 0 rgb(0, 0, 0) ;
+    padding: 2rem;
+    line-height: 3rem;
+    background-color: var(--bg);
+}
+
+td{
+    padding-left: 1rem;
+}
+.textarea input{
+    height: 50px;
+    margin-top: 2.5rem;
+}
+.con{
+        text-align: center;
+        color: var(--text);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+   
+    text-shadow: 0 3px 2px 2px black ;
+    }
+.wadah{
+   background-color: black;
+   color: aliceblue;
+   padding: 2rem;
+}
+/* skil */
+.bungkus-skil{
+    padding: 2rem;
+    background-color: rgb(11, 11, 11);
+}
+.skil{
+    border: 1px solid;
+    background-color: black;
+    box-shadow: 0 6px 10px 0 black;
+ 
+}
+.skil h1{
+    text-align: center;
+    color: var(--text);
+    margin-top: 0.3rem;
+    font-size: 2rem;
+    text-shadow: 0 3px 2px 2px black ;
+}
+.wadah-javascript{
+   padding: 2px 2rem;
+   color: var(--text);
+}
+.javascript-persen{
+    border: 1px solid;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+   
+}
+.skils{
+    padding:2rem 20% ;
+    color: var(--text);
+    
+}
+.wadah-javascript p{
+    color: var(--text);
+   
+}
+.word{
+    height: 15px;
+    border-radius: 2rem;
+    width: 70%;
+    background-color: var(--bg);
+    text-align: end;
+    color: var(--text);
+    align-items: center;
+}
+.exel{
+    height: 15px;
+    border-radius: 2rem;
+    width: 65%;
+    background-color: var(--bg);
+    text-align: end;
+    color: var(--text);
+    align-items: center;
+}
+.html{
+    height: 15px;
+    border-radius: 2rem;
+    width: 90%;
+    background-color: var(--bg);
+    text-align: end;
+    color: var(--text);
+    align-items: center;
+
+}
+.react{
+    align-items: center;
+    height: 15px;
+    border-radius: 2rem;
+    width: 50%;
+    background-color: var(--bg);
+    text-align: end;
+    color: var(--text);
+}
+.javascript{
+    height: 15px;
+    border-radius: 2rem;
+    background-color: var(--bg);
+    text-align: end;
+    color: var(--text);
+    align-items: center;
+    width: 60%;
+
+}
+/* skil */
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5rem;
+    height: 50vh;
+    background-color: black;
+}
+.bungkus-YT{
+    padding-top: 2rem;
+    font-size: 0.9rem;
+}
+.bungkus-YT a {
+    color: var(--text);
+    font-weight: 300;
+   
+}
+.bungkus-YT i{
+    color: red;
+}
+.bungkus-medsos{
+    margin-top: -1rem;
+}
+
+.medsos{
+    color: var(--text);
+}
+.medsos a{
+    color: var(--text);
+    font-size: 0.9rem;
+    letter-spacing: -0rem;
+    font-weight:300 ;
+ 
+}
+.medsos h2{
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    color: black;
+    color: var(--text);
+   
+}
+.medsos ul li{
+    list-style: none;
+}
+.company h2{
+    color: rgb(0, 0, 0);
+    color: var(--text);
+}
+.company ul{
+    margin-top: 0.8rem;
+   line-height: 1.8rem;
+}
+.company ul li{
+    list-style: none;
+}
+.company a{
+    color: var(--text);
+    margin-top: 1.9rem;
+    font-weight:300 ;
+}
+
+.random h2{
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+.random p{
+    color: var(--text);
+    font-weight:300 ;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.f i{
+  color: blue;
+}
+.i i{
+    color: deeppink;
+}
+.skil-footer h4{
+    color: var(--text);
+    list-style: none;
+    line-height: 1.8rem;
+    font-weight: 200;
+}
+.skil-footer h3{
+    color: var(--text);
+    margin-bottom: 1.1rem;
+}
+
+/* footer */
+.cop h4{
+    color: var(--text);
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+.cop{
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+
+#check:checked ~ .sidbar{
+    left: 0;
+    transition: 1s;
+}
+@media(max-width:710px){
+    .mobile{
+        display: inline;
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+    .about{
+        width: 640px;
+        flex-wrap: wrap;
+    }
+    html{
+        font-size: 90%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .service{
+        flex-wrap: wrap;
+    }
+    .col{
+        flex-wrap: wrap;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .maps{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+    .wadah{
+        box-sizing: border-box;
+    }
+   
+    iframe{
+    width: 300px;
+    height: 300px;
+    }
+    .skils{
+        padding:2rem 10px;
+        
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .map{
+        padding-top: 1.5rem;
+    }
+   
+   
+  
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 67%;
+    }
+    .p1{
+        padding-right: 1rem;
+    }
+    .header a{
+        font-size: 2rem;
+    }
+    .mobile{
+        font-size: 2.6rem;
+    }
+  
+   main{
+    margin-top: 7rem;
+   }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .about{
+        width: 360px;
+        flex-wrap: wrap;
+    }
+    .paragraf p{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+
+    }
+    
+    .image img{
+        width: 260px;
+    } 
+    .service{
+        flex-wrap: wrap;
+    }
+}
